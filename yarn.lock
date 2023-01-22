@@ -8533,6 +8533,13 @@ vue-inbrowser-compiler-independent-utils@^4.56.2:
   resolved "https://registry.yarnpkg.com/vue-inbrowser-compiler-independent-utils/-/vue-inbrowser-compiler-independent-utils-4.56.2.tgz#2ca2866b205eb1ef02c04b7a87b6a9f21000c3c7"
   integrity sha512-szE2vZDSkZlItq+K4MevgvCGKt5IzM6OkIjyCuj/09ty2akixeQGNFRXyDELMdmVVzmN+9nJn02YKnoPkhXHwA==
 
+vue-router@4:
+  version "4.1.6"
+  resolved "https://registry.yarnpkg.com/vue-router/-/vue-router-4.1.6.tgz#b70303737e12b4814578d21d68d21618469375a1"
+  integrity sha512-DYWYwsG6xNPmLq/FmZn8Ip+qrhFEzA14EI12MsMgVxvHFDYvlr4NXpVF5hrRH1wVcDP8fGi5F4rxuJSl8/r+EQ==
+  dependencies:
+    "@vue/devtools-api" "^6.4.5"
+
 vue-template-compiler@^2.7.14:
   version "2.7.14"
   resolved "https://registry.yarnpkg.com/vue-template-compiler/-/vue-template-compiler-2.7.14.tgz#4545b7dfb88090744c1577ae5ac3f964e61634b1"

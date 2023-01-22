@@ -1,10 +1,10 @@
-import MyPage from "../components/MyPage.vue";
+import MyPage from "../../components/MyPage.vue";
 import type { Meta, StoryObj } from "@storybook/vue3";
 
 type Story = StoryObj<typeof MyPage>;
 
 const meta: Meta<typeof MyPage> = {
-  title: "page/MyPage",
+  title: "components/MyPage",
   component: MyPage,
   render: () => ({
     components: { MyPage },
