@@ -10,7 +10,17 @@ const config: StorybookConfig = {
     "@storybook/addon-measure",
     "@storybook/addon-outline",
     "@storybook/addon-docs",
+    "@storybook/addon-interactions",
   ],
-
+  // global is not definedの回避策（https://zenn.dev/sa2knight/books/storybook-7-with-vue-3/viewer/play_function）
+  viteFinal: (config) => {
+    return {
+      ...config,
+      define: {
+        ...config.define,
+        global: "window",
+      },
+    };
+  },
 };
 export default config;

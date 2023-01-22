@@ -12,24 +12,6 @@ const meta: Meta<typeof MyPage> = {
   }),
   tags: ["autodocs"],
   parameters: {
-    viewport: {
-      viewports: {
-        pc: {
-          name: "Min PC Layout",
-          styles: {
-            height: "100%",
-            width: "992px",
-          },
-        },
-        mobile: {
-          name: "Min Mobile Layout",
-          styles: {
-            height: "100%",
-            width: "375px",
-          },
-        },
-      },
-    },
     backgrounds: {
       default: "twitter",
       values: [
@@ -48,13 +30,7 @@ const meta: Meta<typeof MyPage> = {
 
 export const Default: Story = {};
 
-export const ForPc: Story = {
-  parameters: {
-    viewport: {
-      defaultViewport: "pc",
-    },
-  },
-};
+export const ForPc: Story = {};
 export const ForMobile: Story = {
   parameters: {
     viewport: {
