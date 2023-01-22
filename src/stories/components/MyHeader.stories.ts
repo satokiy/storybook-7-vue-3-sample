@@ -1,10 +1,10 @@
-import MyHeader from "../components/MyHeader.vue";
+import MyHeader from "../../components/MyHeader.vue";
 import type { Meta, StoryObj } from "@storybook/vue3";
 
 type Story = StoryObj<typeof MyHeader>;
 
 const meta: Meta<typeof MyHeader> = {
-  title: "MyHeader",
+  title: "components/MyHeader",
   component: MyHeader,
   render: (args) => ({
     components: { MyHeader },
@@ -13,6 +13,7 @@ const meta: Meta<typeof MyHeader> = {
     },
     template: "<MyHeader v-bind='args' />",
   }),
+  // tags: ["autodocs"],
   argTypes: {
     onLogin: { action: "login" },
     onLogout: { action: "onLogout" },
