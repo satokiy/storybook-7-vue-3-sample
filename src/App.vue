@@ -3,6 +3,6 @@ import MyPage from "./components/MyPage.vue";
 </script>
 
 <template>
-  <MyPage />
+  <router-view />
 </template>
 
