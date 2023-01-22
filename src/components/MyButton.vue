@@ -1,9 +1,15 @@
 <script setup lang="ts">
 const props = defineProps({
+  /**
+   * 表示するテキスト
+   */
   label: {
     type: String,
     required: true,
   },
+  /**
+   * カラーテーマ
+   */
   variant: {
     type: String,
     default: "primary",
@@ -11,6 +17,9 @@ const props = defineProps({
       return ["primary", "secondary"].includes(value);
     },
   },
+  /**
+   * 大きさ
+   */
   size: {
     type: String,
     default: "medium",
@@ -20,7 +29,12 @@ const props = defineProps({
   },
 });
 
-const emits = defineEmits(["click"]);
+const emits = defineEmits([
+  /**
+   * クリック時
+   */
+  "click",
+]);
 </script>
 
 <template>
