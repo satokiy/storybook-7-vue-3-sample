@@ -32,7 +32,7 @@ function signUp() {
     <main>
       <div class="content-wrapper">
         <div class="content" :key="i" v-for="i in 10">
-          {{ "コンテンツがここに表示されます".repeat(20) }}
+          {{ $t("page.content").repeat(20) }}
         </div>
       </div>
     </main>

@@ -13,7 +13,7 @@ const emits = defineEmits(["login", "signUp", "logout"]);
 
 <template>
   <header>
-    <h1>Storybook 7 + Vue 3 + TypeScript サンプル</h1>
+    <h1>{{ $t("header.title") }}</h1>
     <div class="buttons">
       <template v-if="props.isLoggedIn">
         <MyButton size="small" label="ログアウト" @click="$emit('logout')" />
