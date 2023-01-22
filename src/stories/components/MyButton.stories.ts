@@ -1,10 +1,10 @@
-import MyButton from "../components/MyButton.vue";
+import MyButton from "../../components/MyButton.vue";
 import type { Meta, StoryObj } from "@storybook/vue3";
 
 type Story = StoryObj<typeof MyButton>;
 
 const meta: Meta<typeof MyButton> = {
-  title: "MyButton",
+  title: "components/MyButton",
   component: MyButton,
   render: (args) => ({
     components: { MyButton },
@@ -13,6 +13,7 @@ const meta: Meta<typeof MyButton> = {
     },
     template: "<MyButton v-bind='args' />",
   }),
+  tags: ["autodocs"],
   args: {
     label: "ボタン",
     variant: "primary",
@@ -34,12 +35,4 @@ const meta: Meta<typeof MyButton> = {
 
 export const Default: Story = {};
 
-// export const Login: Story = {
-//   args: {
-//     label: "Login",
-//     variant: "primary",
-//     size: "medium",
-//   },
-// };
-// console.log(JSON.stringify(MyButton.__docgenInfo, null, 2));
 export default meta;

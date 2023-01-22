@@ -1,0 +1,29 @@
+import { Canvas, Meta, Story, ArgsTable } from '@storybook/blocks';
+import MyHeader from '../../components/MyHeader.vue';
+import * as MyHeaderStories from './MyHeader.stories';
+
+<Meta of={MyHeaderStories} />
+
+# MyHeader
+
+ページタイトルやナビゲーションボタンを表示するヘッダーコンポーネントです。
+
+現在のユーザーを `props` で受け取り、各種ボタン押下時のイベントを発火します。
+
+<ArgsTable of={MyHeader} />
+
+## ログイン済み
+
+ログアウトボタンのみ表示されます。
+
+<Canvas>
+  <Story of={MyHeaderStories.Login} />
+</Canvas>
+
+## 未ログイン
+
+ログインボタンと会員登録ボタンが表示されます。
+
+<Canvas>
+  <Story of={MyHeaderStories.Logout} />
+</Canvas>
