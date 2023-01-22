@@ -1,19 +1,16 @@
 <script setup lang="ts">
 import { ref } from "vue";
+import { useCurrentUserStore } from "../pinia";
 import MyHeader from "./MyHeader.vue";
 
-type User = {
-  id: number;
-};
-
-const user = ref<User | null>(null);
+const currentUserStore = useCurrentUserStore();
 
 function login() {
-  user.value = { id: 1 };
+  currentUserStore.login({ id: 1 });
 }
 
 function logout() {
-  user.value = null;
+  currentUserStore.logout();
 }
 
 function signUp() {
@@ -24,7 +21,7 @@ function signUp() {
 <template>
   <div>
     <MyHeader
-      :isLoggedIn="!!user"
+      :isLoggedIn="currentUserStore.isLoggedIn"
       @login="login"
       @logout="logout"
       @signUp="signUp"
